@@ -1,6 +1,7 @@
 typings
 **/app/**/*.js
 **/app/**/*.map
+APM-Final
 node_modules
 jspm_packages
 bower_components
@@ -11,3 +12,5 @@ bower_components
 bin
 obj
 packages
+
+
