@@ -33,7 +33,7 @@
         </td>
         <!--string interpolation-->
         <td>{{ product.productName }}</td>
-        <td>{{ product.productCode }}</td>
+        <td>{{ product.productCode | lowercase | convertToSpace: "-" }}</td>
         <td>{{ product.price }}</td>
         <td>{{ product.starRating }}</td>
       </tr>
