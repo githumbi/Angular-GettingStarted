@@ -7,6 +7,7 @@ import { Iproducts } from './products';
 })
 export class ProductListComponent {
   showImage = false;
+  filterProduct = 'sample';
   productList: Iproducts[] = [
     {
       productId: 1,
