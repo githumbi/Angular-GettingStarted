@@ -8,20 +8,16 @@ import { AppComponent } from './app.component';
 
 
 import { ProductModule } from './products/product.module';
-import { WelcomeComponent } from './home/welcome.component';
-import {  RouterModule } from '@angular/router';
+ 
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
-  declarations: [AppComponent,  WelcomeComponent],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     HttpClientModule,
     ProductModule,
-    RouterModule.forRoot([
-      { path: 'welcome', component: WelcomeComponent },
-      { path: '', redirectTo: 'welcome', pathMatch: 'full' },
-      { path: '**', redirectTo: 'welcome', pathMatch: 'full' },
-    ]),
+    AppRoutingModule,
   ],
   bootstrap: [AppComponent],
 })
